@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up | Toto - Solid basta si Toto!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <div class="bar">
+  <a class="brand" href="index.html"><img src="logo.png" alt="Toto logo"><span><strong>Toto</strong><small>Solid basta si Toto!</small></span></a>
+  <a class="btn" href="index.html" style="margin-left:auto">Back to Home</a>
+ </div>
+</header>
+<main>
+ <section><div class="wrap"><div class="two center">
+  <form id="signupForm" novalidate>
+   <h2>Create an account</h2>
+   <p>Join Toto and start ordering Filipino comfort food.</p>
+   <div class="role-toggle" style="display:flex;gap:.5rem;margin:1rem 0">
+    <button type="button" class="role-btn active" data-role="account">Account</button>
+    <button type="button" class="role-btn" data-role="rider">Rider</button>
+   </div>
+   <input type="hidden" id="suRole" name="role" value="account">
+   <label for="suName">Full Name</label>
+   <input id="suName" type="text" autocomplete="name" placeholder="Juan Dela Cruz"><p class="error" id="suNameErr"></p>
+   <label for="suEmail">Email Address</label>
+   <input id="suEmail" type="email" autocomplete="email" placeholder="toto@gmail.com"><p class="error" id="suEmailErr"></p>
+   <label for="suPhone">Phone Number</label>
+   <input id="suPhone" type="tel" autocomplete="tel" placeholder="09751234567"><p class="error" id="suPhoneErr"></p>
+   <label for="suAddress">Delivery Address</label>
+   <input id="suAddress" type="text" autocomplete="address" placeholder="Mintal, Davao City, Davao del Sur, Philippines 8000"><p class="error" id="suAddressErr"></p>
+   <label for="suPassword">Password</label>
+   <input id="suPassword" type="password" autocomplete="new-password" placeholder="••••••••"><p class="error" id="suPasswordErr"></p>
+   <label for="suConfirmPassword">Confirm Password</label>
+   <input id="suConfirmPassword" type="password" autocomplete="new-password" placeholder="••••••••"><p class="error" id="suConfirmPasswordErr"></p>
+   <p class="error" id="suFormErr" style="margin-bottom:.8rem"></p>
+   <p><button type="submit" class="btn gold">Sign Up</button></p>
+   <p class="center" style="margin-top:.8rem">Already have an account? <a href="signin.html">Sign in</a></p>
+  </form>
+ </div></div></section>
+</main>
+<footer><p><strong>Toto</strong> – Solid basta si Toto! &nbsp;|&nbsp; Filipino food ordering and delivery</p></footer>
+<script src="main.js"></script>
+</body>
+</html>

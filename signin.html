@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account Sign In | Toto - Solid basta si Toto!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <div class="bar">
+  <a class="brand" href="index.html"><img src="logo.png" alt="Toto logo"><span><strong>Toto</strong><small>Solid basta si Toto!</small></span></a>
+  <a class="btn" href="index.html" style="margin-left:auto">Back to Home</a>
+ </div>
+</header>
+<main>
+ <section><div class="wrap"><div class="two center">
+  <form id="signinForm" novalidate>
+   <h2>Welcome back</h2>
+   <p>Sign in to your Toto account to keep ordering.</p>
+   <div class="role-toggle" style="display:flex;gap:.5rem;margin:1rem 0">
+    <button type="button" class="role-btn active" data-role="account">Account</button>
+    <button type="button" class="role-btn" data-role="rider">Rider</button>
+   </div>
+   <input type="hidden" id="role" name="role" value="account">
+   <label for="siEmail">Email Address</label>
+   <input id="siEmail" type="email" autocomplete="email" placeholder="toto@gmail.com"><p class="error" id="siEmailErr"></p>
+   <label for="siPassword">Password</label>
+   <input id="siPassword" type="password" autocomplete="current-password" placeholder="••••••••"><p class="error" id="siPasswordErr"></p>
+   <p class="error" id="siFormErr" style="margin-bottom:.8rem"></p>
+   <p><button type="submit" class="btn gold">Sign In</button></p>
+   <p class="center" style="margin-top:.8rem">New to Toto? <a href="signup.html">Create an account</a></p>
+  </form>
+  <div id="riderNote" class="hidden" style="padding:1rem;border:1px solid var(--gold);border-radius:8px;background:var(--cream)">
+   <strong>Rider sign-in:</strong> Use your rider account to accept delivery jobs and track orders assigned to you.
+  </div>
+ </div></div></section>
+</main>
+<footer><p><strong>Toto</strong> – Solid basta si Toto! &nbsp;|&nbsp; Filipino food ordering and delivery</p></footer>
+<script src="main.js"></script>
+</body>
+</html>

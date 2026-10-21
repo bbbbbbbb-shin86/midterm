@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | Toto - Solid basta si Toto!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <div class="bar">
+  <a class="brand" href="index.html"><img src="logo.png" alt="Toto logo"><span><strong>Toto</strong><small>Solid basta si Toto!</small></span></a>
+  <button id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+  <nav id="mainNav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html" class="active" aria-current="page">Contact Us</a></li><li><a href="signin.html">Sign In</a></li><li><a href="signup.html">Sign Up</a></li><li><a href="menu.html">🛒 Cart<span class="badge" id="cartBadge">0</span></a></li></ul></nav>
+ </div>
+</header>
+<main>
+<section><div class="wrap"><h1>Contact Us</h1><div class="two">
+<form id="contactForm" novalidate>
+<label for="cName">Full Name</label><input id="cName" type="text" autocomplete="name"><p class="error" id="cNameErr"></p>
+<label for="cEmail">Email Address</label><input id="cEmail" type="email" autocomplete="email" placeholder="juan@email.com"><p class="error" id="cEmailErr"></p>
+<label for="cPhone">Phone Number</label><input id="cPhone" type="tel" autocomplete="tel" placeholder="09171234567"><p class="error" id="cPhoneErr"></p>
+<label for="cMessage">Message</label><textarea id="cMessage" rows="5"></textarea><p class="error" id="cMessageErr"></p>
+<p><button type="submit" class="btn">Submit</button></p>
+<p id="contactSuccess" class="msg ok hidden" role="status"></p></form>
+<div><h2>Get in Touch</h2>
+<p><strong>Address:</strong> Mintal, Davao City, Davao del Sur, Philippines 8000</p>
+<p><strong>Phone:</strong> 09751234567</p>
+<p><strong>Email:</strong> toto@gmail.com</p>
+<h3>Business Hours</h3>
+<p>Monday - Sunday: 8:00 AM – 10:00 PM</p>
+<p>Solid basta si Toto!</p></div></div></div></section>
+</main>
+<footer><p><strong>Toto</strong> – Solid basta si Toto! &nbsp;|&nbsp; Filipino food ordering and delivery</p></footer>
+<script src="main.js"></script>
+</body>
+</html>
